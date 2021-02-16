@@ -1,4 +1,12 @@
 $( document ).ready(function() {
+        
+    $(window).on('load scroll', function(){
+        if($(window).scrollTop() > 0){
+            $('header').addClass('scrolled');
+        }else{
+            $('header').removeClass('scrolled');
+        }
+    });
 
         //swiper
         var mySwiper = new Swiper ('.swiper-container', {
@@ -26,16 +34,6 @@ $( document ).ready(function() {
               prevEl: '.swiper-button-prev',
             },
         })
-    
-    
-    $(window).on('load scroll', function(){
-        if($(window).scrollTop() > 0){
-            $('header').addClass('scrolled');
-        }else{
-            $('header').removeClass('scrolled');
-        }
-    });
-
 
     $(".page").on("click","a", function (event) {
         event.preventDefault();
