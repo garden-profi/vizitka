@@ -34,6 +34,11 @@ $( document ).ready(function() {
               prevEl: '.swiper-button-prev',
             },
         })
+        //swiperFixer
+        $('.swiper-button-prev').click();
+        setTimeout(function(){
+          $('.swiper-button-next').click();
+        }, 800);
 
     $(".page").on("click","a", function (event) {
         event.preventDefault();
