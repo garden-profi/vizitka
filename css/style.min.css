@@ -840,6 +840,7 @@ header .line {
 
     .gallery-001 h2 {
         font-size: 28px;
-        margin-bottom: 26px
+        margin-bottom: 26px;
+        padding-bottom: 0;
     }
 }
