@@ -35,10 +35,9 @@ $( document ).ready(function() {
             },
         })
         //swiperFixer
-        $('.swiper-button-prev').click();
         setTimeout(function(){
           $('.swiper-button-next').click();
-        }, 800);
+        }, 1000);
 
     $(".page").on("click","a", function (event) {
         event.preventDefault();
